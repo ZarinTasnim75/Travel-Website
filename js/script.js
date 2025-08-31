@@ -64,6 +64,29 @@ disableOnInteraction:false,
 }
     },
  } );
-
+ 
+var swiper = new Swiper('.brand-slider', {
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 5,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      1024: { slidesPerView: 5 },
+      768: { slidesPerView: 3 },
+      480: { slidesPerView: 2 },
+      320: { slidesPerView: 1 },
+    }
+  });
 // home section ends
 
