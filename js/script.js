@@ -45,6 +45,25 @@ videoBtn.forEach(btn =>{
  })
 });
 
-// home section ends
+ var swiper = new Swiper(".review-slider", {
+    spaceBetween :20,
+    loop:true,
+    autoplay:{
+delay: 2500,
+disableOnInteraction:false,
+    },
+    breakpoints:{
+640:{
+    slidesPerview:1,
+},
+768:{
+    slidesPerview:2,
+},
+1024:{
+    slidesPerview:3,
+}
+    },
+ } );
 
+// home section ends
 
