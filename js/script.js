@@ -45,48 +45,45 @@ videoBtn.forEach(btn =>{
  })
 });
 
- var swiper = new Swiper(".review-slider", {
-    spaceBetween :20,
-    loop:true,
-    autoplay:{
-delay: 2500,
-disableOnInteraction:false,
+var swiper = new Swiper(".review-slider", {
+  spaceBetween: 20,
+  loop:true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints:{
+    640: {
+      slidesPerView:1,
+    }, 
+    768: {
+      slidesPerView:2,
     },
-    breakpoints:{
-640:{
-    slidesPerview:1,
-},
-768:{
-    slidesPerview:2,
-},
-1024:{
-    slidesPerview:3,
-}
+     1024: {
+      slidesPerView:3,
     },
- } );
- 
-var swiper = new Swiper('.brand-slider', {
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: 5,
-    spaceBetween: 20,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      1024: { slidesPerView: 5 },
-      768: { slidesPerView: 3 },
-      480: { slidesPerView: 2 },
-      320: { slidesPerView: 1 },
-    }
-  });
-// home section ends
+  },
+});
 
+var swiper = new Swiper(".brand-slider", {
+  spaceBetween: 20,
+  loop:true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints:{
+    450: {
+      slidesPerView:2,
+    }, 
+    768: {
+      slidesPerView:3,
+    },
+     991: {
+      slidesPerView:4,
+    },
+    1200: {
+      slidesPerView:5,
+    },
+  },
+});
