@@ -74,10 +74,8 @@
                     Mountains call and rivers flow,<br />
                     Everywhere you go, new stories grow.
                 </p>
-
-                <a href="#" class="btn">Discover More</a>
+                 <a href="#packages" class="btn">Discover More</a>
             </div>
-
             <div class="controls">
                 <span class="vid-btn active" data-src="images/video-8.mp4"></span>
                 <span class="vid-btn" data-src="images/video-2.mp4"></span>
@@ -110,26 +108,28 @@
                 <div class="image">
                     <img src="images/logo2.jpg" alt="" />
                 </div>
-
-                <form action="">
+<!-- form starts -->
+            <form id="bookingForm">
                     <div class="inputBox">
                         <h3>where to</h3>
-                        <input type="text" placeholder="place name" />
+                        <input type="text" placeholder="place name" name="placename" />
                     </div>
                     <div class="inputBox">
                         <h3>how many</h3>
-                        <input type="number" placeholder="number of guests" />
+                        <input type="number" placeholder="number of guests" name="guests" />
                     </div>
                     <div class="inputBox">
                         <h3>arrivals</h3>
-                        <input type="date" />
+                        <input type="date" name="arrDate"/>
                     </div>
                     <div class="inputBox">
                         <h3>leavings</h3>
-                        <input type="date" />
+                        <input type="date" name="deptDate" />
                     </div>
                     <input type="submit" class="btn" value="book now" />
-                </form>
+                </form>
+ <!-- form ends -->
+                
             </div>
         </section>
         <!-- book session ends -->

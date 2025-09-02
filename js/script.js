@@ -87,3 +87,22 @@ var swiper = new Swiper(".brand-slider", {
     },
   },
 });
+
+//for local storage
+  document.getElementById("bookingForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+
+    const bookingData = {
+      placename: form.placename.value,
+      guests: form.guests.value,
+      arrDate: form.arrDate.value,
+      deptDate: form.deptDate.value,
+    };
+
+    localStorage.setItem("flightBooking", JSON.stringify(bookingData));
+
+    // Redirect to confirmation page
+    window.location.href = "confirmation.html";
+  });
