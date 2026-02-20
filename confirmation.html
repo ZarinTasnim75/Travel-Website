@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Booking Confirmation</title>
+  <!-- <link rel="stylesheet" href="style.css" />  -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('images/bg.jpg') no-repeat center center/cover;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #007BFF;
+      margin-bottom: 25px;
+    }
+
+    .detail {
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .label {
+      font-weight: 600;
+      color: #555;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Booking Confirmation</h2>
+    <div id="bookingDetails"></div>
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+
+  <script>
+    const data = JSON.parse(localStorage.getItem("flightBooking"));
+
+    if (data) {
+      document.getElementById("bookingDetails").innerHTML = `
+        <div class="detail"><span class="label">Destination:</span> ${data.placename}</div>
+        <div class="detail"><span class="label">Guests:</span> ${data.guests}</div>
+        <div class="detail"><span class="label">Arrival Date:</span> ${data.arrDate}</div>
+        <div class="detail"><span class="label">Departure Date:</span> ${data.deptDate}</div>
+      `;
+    } else {
+      document.getElementById("bookingDetails").innerHTML = `
+        <div class="detail">No booking data found. Please return to the booking page.</div>
+      `;
+    }
+  </script>
+</body>
+</html>
