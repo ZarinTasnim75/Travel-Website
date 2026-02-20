@@ -1,8 +1,16 @@
+document.addEventListener('DOMContentLoaded', () => {
+  
 let searchBtn= document.querySelector('#search-btn');
 let searchBar=document.querySelector('.search-bar-container');
 let formBtn=document.querySelector('#login-btn');
-let loginForm=document.querySelector('.login-form-container');
+let loginFormContainer=document.querySelector('.login-form-container');
 let formClose=document.querySelector('#form-close');
+let loginForm = document.querySelector('#login-form');
+let registerForm = document.querySelector('#register-form');
+let showRegisterLink = document.querySelector('#show-register');
+let showLoginLink = document.querySelector('#show-login');
+
+
 let menu= document.querySelector('#menu-bar');
 let navbar= document.querySelector('.navbar');
 
@@ -27,12 +35,30 @@ searchBtn.addEventListener('click',() =>{
     searchBar.classList.toggle('active');
 });
 
-formBtn.addEventListener('click',() =>{
-    loginForm.classList.add('active');
+// Open login modal
+formBtn.addEventListener('click', () => {
+    loginFormContainer.classList.add('active');
+    loginForm.style.display = 'block';
+    registerForm.style.display = 'none';
 });
 
-formClose.addEventListener('click',() =>{
-    loginForm.classList.remove('active');
+// Close modal
+formClose.addEventListener('click', () => {
+    loginFormContainer.classList.remove('active');
+});
+
+// Switch to register form
+showRegisterLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginForm.style.display = 'none';
+    registerForm.style.display = 'block';
+});
+
+// Switch back to login form
+showLoginLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    registerForm.style.display = 'none';
+    loginForm.style.display = 'block';
 });
 
 // home section starts
@@ -105,4 +131,6 @@ var swiper = new Swiper(".brand-slider", {
 
     // Redirect to confirmation page
     window.location.href = "confirmation.html";
+  });
+
   });
