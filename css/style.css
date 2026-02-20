@@ -127,7 +127,7 @@ header .search-bar-container label:hover {
   color: var(--orange);
 }
 
-.login-form-container{
+.login-form-container {
   position: fixed;
   top: -120%;
   left: 0;
@@ -174,8 +174,6 @@ header .search-bar-container label:hover {
   border-color: var(--orange);
 }
 
-
-
 .login-form-container form #remember {
   margin: 2rem 0;
 }
@@ -204,44 +202,13 @@ header .search-bar-container label:hover {
   text-decoration: underline;
 }
 
-
-.login-form-container #form-close  {
+.login-form-container #form-close {
   position: absolute;
   top: 2rem;
   right: 3rem;
   font-size: 3rem;
   color: #fff;
   cursor: pointer;
-}
-.icons {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; /* space between search, name, and logout */
-}
-
-/* Style for logged-in user name */
-.user-name {
-    font-size: 1.6rem;       /* size of the text */
-    color: var(--orange);     /* or any color you like */
-    font-weight: bold;        /* make it bold */
-    margin-left: 1rem;        /* spacing from icons */
-}
-
-.user-name:hover {
-    color: #ffd53e;              /* change color on hover */
-    cursor: default;          /* show default cursor */
-}
-
-.logout-link {
-    color:var(--orange); 
-    font-size: 1.5rem;
-    margin-left: 0.5rem;
-    text-decoration: none;
-}
-
-.logout-link:hover {
-    color: #ffd53e;
-    text-decoration: underline;
 }
 
 #menu-bar {

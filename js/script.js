@@ -10,6 +10,7 @@ let registerForm = document.querySelector('#register-form');
 let showRegisterLink = document.querySelector('#show-register');
 let showLoginLink = document.querySelector('#show-login');
 
+
 let menu= document.querySelector('#menu-bar');
 let navbar= document.querySelector('.navbar');
 
