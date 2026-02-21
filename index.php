@@ -174,7 +174,7 @@
             </h1>
 
             <div class="box-container">
-                <div class="box">
+                <div class="box" id="bali">
                     <img src="images/Bali.webp" alt="" />
                     <div class="content">
                         <h3><i class="fas fa-map-marker-alt"> Bali,Indonesia</i></h3>
@@ -194,7 +194,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box" id="agra">
                     <img src="images/Agra.jpg" alt="" />
                     <div class="content">
                         <h3><i class="fas fa-map-marker-alt"> Lal-kila ,Agra</i></h3>
@@ -214,7 +214,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box" id="saint-martin">
                     <img src="images/saint-martin.webp" alt="" />
                     <div class="content">
                         <h3>
@@ -236,7 +236,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box" id="brazil">
                     <img src="images/Amazon.avif" alt="" />
                     <div class="content">
                         <h3><i class="fas fa-map-marker-alt"> Brazil</i></h3>
@@ -256,7 +256,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box" id="egypt">
                     <img src="images/Giza.jpg" alt="" />
                     <div class="content">
                         <h3><i class="fas fa-map-marker-alt"> Egypt</i></h3>
@@ -276,7 +276,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box" id="venice">
                     <img src="images/Venice.jpeg" alt="" />
                     <div class="content">
                         <h3><i class="fas fa-map-marker-alt"> Venice, Italy</i></h3>
