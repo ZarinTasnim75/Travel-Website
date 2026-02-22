@@ -35,7 +35,6 @@
 
         <div class="icons">
             <i class="fas fa-search" id="search-btn"></i>
-            <!-- <i class="fas fa-user" id="login-btn"></i> -->
        <?php
         // Show user name + logout if logged in
         if(isset($_SESSION['user_name'])) {
@@ -61,16 +60,13 @@
         <i class="fas fa-times" id="form-close"></i>
 
         <form id="login-form" action="login.php" method="POST">
-            <!--cng  -->
             <h3>login</h3>
             <input type="email" name="email" class="box" placeholder="enter your email" />
-            <!--cng  -->
             <input type="password" name="password" class="box" placeholder="enter your password" />
-            <!--cng  -->
             <input type="submit" value="login now" class="btn" />
             <input type="checkbox" id="remember" />
             <label for="remember">remember me</label>
-            <p>forget password? <a href="#">click here</a></p>
+            <p>forget password? <a href="forgot_password.php">click here</a></p>
             <p>
                 don't have an account? <a href="#" id="show-register">register now</a>
             </p>
@@ -87,6 +83,16 @@
                 Already have an account? <a href="#" id="show-login">Login now</a>
             </p>
         </form>
+ <form id="reset-form" method="POST" action="forgot_password.php" style="display: none;">
+    <h3>Reset Password</h3>
+    <input type="email" name="email" class="box" placeholder="Enter your email" required>
+    <input type="submit" value="Send Reset Link" class="btn" />
+    <div id="reset-link-message" style="margin-top:10px; color:green;"></div>
+    <p>
+        Remember your password? <a href="#" id="show-login-from-reset">Login now</a>
+    </p>
+</form>
+
     </div>
 
 
@@ -581,7 +587,7 @@
                 <span>c</span>
                 <span>t</span>
             </h1>
-            <div class="row">
+<div class="row">
                 <div class="image">
                     <img src="images/pg1.jpg" alt="" />
                 </div>
@@ -600,8 +606,8 @@
     <textarea name="message" placeholder="message" cols="30" rows="10" required></textarea>
 
     <input type="submit" class="btn" value="send message" />
-</form>
-            </div>
+  </form>
+   </div>
         </section>
         <!-- contact section ends  -->
 

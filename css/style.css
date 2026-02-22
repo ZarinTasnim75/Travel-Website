@@ -216,10 +216,9 @@ header .search-bar-container label:hover {
 .icons {
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* space between search, name, and logout */
+    gap: 0.5rem; 
 }
 
-/* Style for logged-in user name */
 .user-name {
     font-size: 1.6rem;       
     color: var(--orange);     

@@ -8,6 +8,7 @@ let loginForm = document.querySelector('#login-form');
 let registerForm = document.querySelector('#register-form');
 let showRegisterLink = document.querySelector('#show-register');
 let showLoginLink = document.querySelector('#show-login');
+const resetForm = document.getElementById('reset-form');
 
 let menu= document.querySelector('#menu-bar');
 let navbar= document.querySelector('.navbar');
@@ -27,6 +28,41 @@ menu.addEventListener('click',() => {
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 });
+
+// Links/buttons
+const forgetPasswordLink = loginForm.querySelector('p a'); // first forget password link
+const showLoginFromReset = document.getElementById('show-login-from-reset');
+
+// Show register form
+showRegisterLink.addEventListener('click', () => {
+    loginForm.style.display = 'none';
+    registerForm.style.display = 'block';
+    resetForm.style.display = 'none';
+});
+
+// Show login form from register
+showLoginLink.addEventListener('click', () => {
+    loginForm.style.display = 'block';
+    registerForm.style.display = 'none';
+    resetForm.style.display = 'none';
+});
+
+// Show reset password form
+forgetPasswordLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginForm.style.display = 'none';
+    registerForm.style.display = 'none';
+    resetForm.style.display = 'block';
+});
+
+// Show login form from reset
+showLoginFromReset.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginForm.style.display = 'block';
+    registerForm.style.display = 'none';
+    resetForm.style.display = 'none';
+});
+
 
   const searchInput = document.querySelector('#search-bar');
   const searchForm = document.querySelector('.search-bar-container');
@@ -158,27 +194,4 @@ var swiper = new Swiper(".brand-slider", {
     },
   },
 });
-
-//for local storage
-// const bookingForm = document.getElementById("bookingForm");
-
-// if (bookingForm) {
-//   bookingForm.addEventListener("submit", function (e) {
-//     e.preventDefault();
-
-//     const form = e.target;
-
-//     const bookingData = {
-//       placename: form.placename.value,
-//       guests: form.guests.value,
-//       arrDate: form.arrDate.value,
-//       deptDate: form.deptDate.value,
-//     };
-
-//     localStorage.setItem("flightBooking", JSON.stringify(bookingData));
-
-//     window.location.href = "confirmation.html";
-//   });
-// }
-
   });
