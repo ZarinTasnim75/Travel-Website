@@ -1,7 +1,8 @@
 
 <?php
 
-$mysqli = new mysqli("localhost", "root", "57200", "travel_db");
+// $mysqli = new mysqli("localhost", "root", "57200", "travel_db");
+$mysqli = new mysqli("localhost", "root", "", "project_db", 3307);
 
 if ($mysqli->connect_error) {
     die("Database Connection Failed: " . $mysqli->connect_error);
