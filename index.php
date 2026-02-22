@@ -185,8 +185,7 @@
                     <div class="content">
                         <h3><i class="fas fa-map-marker-alt"> Bali,Indonesia</i></h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-                            omnis.
+                           Tropical paradise with beaches, rice terraces, temples, vibrant culture, surfing, and breathtaking sunsets.
                         </p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -205,8 +204,7 @@
                     <div class="content">
                         <h3><i class="fas fa-map-marker-alt"> Lal-kila ,Agra</i></h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-                            omnis.
+                            Majestic red sandstone fort showcasing Mughal architecture, history, and panoramic views of Agra city.
                         </p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -227,8 +225,7 @@
                             <i class="fas fa-map-marker-alt"> Saint Martin , Cox's Bazar</i>
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-                            omnis.
+                            Pristine coral island, turquoise waters, sandy beaches, calm atmosphere, ideal for relaxation and snorkeling.
                         </p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -247,8 +244,7 @@
                     <div class="content">
                         <h3><i class="fas fa-map-marker-alt"> Brazil</i></h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-                            omnis.
+                            Diverse landscapes with rainforests, beaches, Carnival, football passion, vibrant culture, and Amazon River adventures.
                         </p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -267,8 +263,7 @@
                     <div class="content">
                         <h3><i class="fas fa-map-marker-alt"> Egypt</i></h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-                            omnis.
+                            Ancient civilization with pyramids, Nile River, temples, pharaohs, hieroglyphics, deserts, and rich historical heritage.
                         </p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -287,8 +282,7 @@
                     <div class="content">
                         <h3><i class="fas fa-map-marker-alt"> Venice, Italy</i></h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-                            omnis.
+                            Romantic canals, gondolas, historic architecture, piazzas, bridges, art, and world-famous Italian culture experiences.
                         </p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -633,9 +627,7 @@
                 <div class="box">
                     <h3>About us</h3>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Obcaecati voluptate rerum, maxime fugiat impedit quasi ea.
-                        Blanditiis, tempore veniam? Asperiores.
+                       We are a team of travel enthusiasts and developers creating a platform to simplify trip planning. Our service helps travelers discover destinations, book services, and enjoy memorable experiences worldwide.
                     </p>
                 </div>
 
@@ -649,13 +641,13 @@
 
                 <div class="box">
                     <h3>Quick links</h3>
-                    <a href="#">home</a>
-                    <a href="#">book</a>
-                    <a href="#">packages</a>
-                    <a href="#">services</a>
-                    <a href="#">gallery</a>
-                    <a href="#">review</a>
-                    <a href="#">contact</a>
+                    <a href="#home">home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
                 </div>
 
                 <div class="box">
@@ -675,7 +667,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- custom js file link -->
     <script src="js/script.js"></script>
 </body>
 
