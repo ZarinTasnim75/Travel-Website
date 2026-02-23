@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "project_db", 3307);
+$mysqli = new mysqli("localhost", "root", "", "travel_booking", 3306);
 
 $message = "";
 

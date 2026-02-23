@@ -142,26 +142,23 @@
                     <img src="images/logo2.jpg" alt="" />
                 </div>
                 <!-- form starts -->
-                <form id="bookingForm">
-                    <div class="inputBox">
-                        <h3>where to</h3>
-                        <input type="text" placeholder="place name" name="placename" />
-                    </div>
-                    <div class="inputBox">
-                        <h3>how many</h3>
-                        <input type="number" placeholder="number of guests" name="guests" />
-                    </div>
-                    <div class="inputBox">
-                        <h3>arrivals</h3>
-                        <input type="date" name="arrDate" />
-                    </div>
-                    <div class="inputBox">
-                        <h3>leavings</h3>
-                        <input type="date" name="deptDate" />
-                    </div>
-                    <input type="submit" class="btn" value="book now" />
-                             
-                </form>
+ <!-- form starts -->
+                 <?php if(isset($_SESSION['user_id'])): ?>
+                <form action="insert.php" method="POST">
+
+<input type="text" name="placename" placeholder="Where to" class="box" required>
+
+<input type="number" name="guests" placeholder="How many" class="box" required>
+
+<input type="date" name="arrDate" class="box" required>
+<input type="date" name="deptDate" class="box" required>
+
+<input type="submit" value="Book Now" class="btn">
+</form>
+<?php else: ?>
+<p>Please login to book a trip.</p>
+<?php endif; ?>
+<!-- form ends -->
                 <!-- form ends -->
             </div>
         </section>
@@ -195,7 +192,7 @@
                             <i class="far fa-star"></i>
                         </div>
                         <div class="price">$90.00<span>$120.00</span></div>
-                        <a href="#" class="btn">book now</a>
+                        <a href="#book" class="btn">book now</a>
                     </div>
                 </div>
 
@@ -214,7 +211,7 @@
                             <i class="far fa-star"></i>
                         </div>
                         <div class="price">$90.00<span>$120.00</span></div>
-                        <a href="#" class="btn">book now</a>
+                        <a href="#book" class="btn">book now</a>
                     </div>
                 </div>
 
@@ -235,7 +232,7 @@
                             <i class="far fa-star"></i>
                         </div>
                         <div class="price">$90.00<span>$120.00</span></div>
-                        <a href="#" class="btn">book now</a>
+                        <a href="#book" class="btn">book now</a>
                     </div>
                 </div>
 
@@ -254,7 +251,7 @@
                             <i class="far fa-star"></i>
                         </div>
                         <div class="price">$90.00<span>$120.00</span></div>
-                        <a href="#" class="btn">book now</a>
+                        <a href="#book" class="btn">book now</a>
                     </div>
                 </div>
 
@@ -273,7 +270,7 @@
                             <i class="far fa-star"></i>
                         </div>
                         <div class="price">$90.00<span>$120.00</span></div>
-                        <a href="#" class="btn">book now</a>
+                        <a href="#book" class="btn">book now</a>
                     </div>
                 </div>
 
@@ -292,7 +289,7 @@
                             <i class="far fa-star"></i>
                         </div>
                         <div class="price">$90.00<span>$120.00</span></div>
-                        <a href="#" class="btn">book now</a>
+                        <a href="#book" class="btn">book now</a>
                     </div>
                 </div>
             </div>
